@@ -176,7 +176,7 @@ Other platforms:
 
 ## Security & secrets
 
-- Never commit `.env` or secret files. This repo includes `.gitignore` entries to ignore dev-only secret files (example: `test-cleanup.js`) — those are local-only files.
+- Never commit `.env` or secret files. This repo includes `.gitignore` entries to ignore dev-only secret files.
 - If a secret is accidentally committed, rotate the secret and remove it from history using appropriate git history tools.
 - Use secure random values for `CRON_SECRET`.
 
@@ -207,12 +207,3 @@ git grep -n "test-cleanup" || true
 - Open pull requests with descriptive titles and change descriptions.
 
 ---
-
-## Additional notes
-
-- This project uses Prisma v6 and Next.js. Make sure to follow Prisma and Next.js documentation for advanced configuration and deployment scenarios.
-- If you expect to run production workloads, configure connection pooling and secrets management according to your platform best practices.
-
----
-
-## Test commits
